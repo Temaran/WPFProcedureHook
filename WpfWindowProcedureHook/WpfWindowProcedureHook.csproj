@@ -53,7 +53,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Dbt.cs" />
+    <Compile Include="DeviceChangeCode.cs" />
     <Compile Include="IUsbNotifier.cs" />
     <Compile Include="NativeMethods.cs" />
     <Compile Include="WindowsMessage.cs" />

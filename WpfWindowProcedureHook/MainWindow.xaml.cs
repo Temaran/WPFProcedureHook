@@ -55,13 +55,13 @@ namespace WpfWindowProcedureHook
             {
                 case WindowsMessage.DeviceChange:
                 {
-                    switch ((Dbt)wparam)
+                    switch ((DeviceChangeCode)wparam)
                     {
-                        case Dbt.DeviceArrival:
+                        case DeviceChangeCode.DeviceArrival:
                             UsbDeviceAttached(this, null);
                             Debug.WriteLine("Attach");
                             break;
-                        case Dbt.DeviceRemoveComplete:
+                        case DeviceChangeCode.DeviceRemoveComplete:
                             UsbDeviceDetached(this, null);
                             Debug.WriteLine("Detach");
                             break;
